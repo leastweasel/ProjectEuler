@@ -14,24 +14,8 @@ def initialiseRoutingTable(gridSize):
 
     return routingTable
 
-def setUpCoordinates(gridSize):
-    coords = []
-    
-    for i in range(0, gridSize+1):
-        coord = (i, gridSize-i)
-        coords.append(coord)
-        
-    return coords
-      
-gridSize = 20
+gridSize = 21
 
 routingTable = initialiseRoutingTable(gridSize)
-coords = setUpCoordinates(gridSize)
 
-total = 0
-
-for coord in coords:
-    cellValue = routingTable[coord[0]][coord[1]]
-    total += (cellValue ** 2)
-    
-print total
+print routingTable[gridSize-1][gridSize-1]
