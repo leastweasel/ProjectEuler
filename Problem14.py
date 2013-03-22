@@ -17,4 +17,4 @@ for startNumber in range(2, 1000000):
         mostSteps = steps
         forStartNumber = startNumber
         
-print "Longest sequence is",mostSteps,"for starting number",forStartNumber
+print("Longest sequence is",mostSteps,"for starting number",forStartNumber)

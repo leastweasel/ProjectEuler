@@ -9,4 +9,4 @@ for prime in s:
     if foundNumberOfPrimes == 10001:
         break;
 
-print "Found", foundNumberOfPrimes, "primes. Maximum is:", prime
+print("Found", foundNumberOfPrimes, "primes. Maximum is:", prime)

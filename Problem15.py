@@ -18,4 +18,4 @@ gridSize = 21
 
 routingTable = initialiseRoutingTable(gridSize)
 
-print routingTable[gridSize-1][gridSize-1]
+print(routingTable[gridSize-1][gridSize-1])

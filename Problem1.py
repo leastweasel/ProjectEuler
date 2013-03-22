@@ -33,4 +33,4 @@ for product in commonProducts:
     numberOfInstances = findNumberOfFactorInstances(product, maximumNumber)
     total = total - findSumOfFactors(product, numberOfInstances)
         
-print total
+print(total)

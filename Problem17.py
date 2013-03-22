@@ -60,6 +60,6 @@ total = 0
 for i in range(1000):
     total += hundredLengthFor(i+1) + tenLengthFor(i+1)
 
-print total
+print(total)
         
-print (hundredLengthFor(1000) + tenLengthFor(1000))
+print((hundredLengthFor(1000) + tenLengthFor(1000)))

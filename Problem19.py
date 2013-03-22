@@ -25,7 +25,7 @@ while dayInCentury < daysInCentury:
 
     if dayInCentury % 7 == 5:
         monthsStartingOnSunday += 1
-        print "Year:",str(year)," Month:", str(month + 1)," Day:", dayInCentury
+        print("Year:",str(year)," Month:", str(month + 1)," Day:", dayInCentury)
 
     dayInCentury += DaysInMonth[month];
     month += 1
@@ -34,4 +34,4 @@ while dayInCentury < daysInCentury:
         month = 0
         year += 1
         
-print monthsStartingOnSunday
+print(monthsStartingOnSunday)

@@ -35,6 +35,6 @@ for n in t:
         maxDivisors = numDivisors
         
     if numDivisors > 500:
-        print "Triangular number",n,"has",numDivisors,"divisors" 
+        print("Triangular number",n,"has",numDivisors,"divisors") 
         
-print "Maximum number of divisors = ",maxDivisors
+print("Maximum number of divisors = ",maxDivisors)

@@ -6,4 +6,4 @@ sumOfPrimes = 0
 for prime in s:
     sumOfPrimes += prime
 
-print "Sum =", sumOfPrimes
+print("Sum =", sumOfPrimes)

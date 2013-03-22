@@ -53,5 +53,5 @@ def processRows(rows):
             
     return rows[0][0].valueAsParent
     
-print "Problem 18:", processRows(readNumberTree("Problem18.txt"))
-print "Problem 67:", processRows(readNumberTree("Problem67.txt"))
+print("Problem 18:", processRows(readNumberTree("Problem18.txt")))
+print("Problem 67:", processRows(readNumberTree("Problem67.txt")))

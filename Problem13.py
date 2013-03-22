@@ -37,7 +37,7 @@ def readNumbersToSum(filename):
 
             numbersToSum.append(longNumber)
 
-    print "Longest number is",maxLength,"digits long"
+    print("Longest number is",maxLength,"digits long")
     
     return reverseAndPadNumbers(numbersToSum, maxLength)
 
@@ -82,11 +82,11 @@ def sumDigitsAtPosition(numbersToSum, position):
     
 numbersToSum = readNumbersToSum('Problem13.txt')
 
-print "Read",len(numbersToSum),"numbers from file"
+print("Read",len(numbersToSum),"numbers from file")
 
 if len(numbersToSum) > 0:
-    print "First number is:", numbersToSum[0]
+    print("First number is:", numbersToSum[0])
     
     firstDigits, carry = sumNumbers(numbersToSum, 10)
-    print "First digits of sum:", firstDigits
-    print "Carry:", carry
+    print("First digits of sum:", firstDigits)
+    print("Carry:", carry)

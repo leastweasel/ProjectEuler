@@ -34,7 +34,7 @@ class SieveOfEratosthenes:
                     self.primeCandidates[6::6] = True
                     self.primeCandidates[10::6] = True
 
-    def next(self):
+    def __next__(self):
         """Get the next prime, raising a StopIteration exception if there are no more."""
         if self.currentIndex >= self.maxCandidate:
             raise StopIteration
@@ -68,7 +68,7 @@ class PrimeFactorisor:
     def getPrimeFactors(self):
         """Get all of the prime factors of the number, including duplicates."""
         ok = False
-        maxCandidate = long(sqrt(self.numberToFactorise))
+        maxCandidate = int(sqrt(self.numberToFactorise))
 
         while not ok:
             s = SieveOfEratosthenes(maxCandidate)
@@ -113,7 +113,7 @@ class TriangularNumbers:
     """
     def __init__(self, maxCandidate):
         """Set up the maximum prime that will be returned."""
-        print "Max Candidate:", maxCandidate
+        print("Max Candidate:", maxCandidate)
         self.maxCandidate = maxCandidate
         self.currentIndex = 0;
         self.currentNumber = 0;
@@ -121,7 +121,7 @@ class TriangularNumbers:
     def __iter__(self):
         return self
         
-    def next(self):
+    def __next__(self):
         """Get the next number, raising a StopIteration exception if there are no more."""
         if self.maxCandidate != None and self.currentIndex >= self.maxCandidate:
             raise StopIteration

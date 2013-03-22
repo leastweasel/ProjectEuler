@@ -7,4 +7,4 @@ total = 0
 for c in value:
     total += int(c)
     
-print total
+print(total)

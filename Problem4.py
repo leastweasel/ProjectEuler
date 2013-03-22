@@ -3,7 +3,7 @@ def isPalindrome(candidate):
     stringLen = len(candidateStr)
 
     midPoint = stringLen // 2
-    rangeUp = range(0, midPoint+1)
+    rangeUp = list(range(0, midPoint+1))
 
     for x in rangeUp:
         if candidateStr[x] != candidateStr[stringLen-(x+1)]:
@@ -21,4 +21,4 @@ for x in range(100,1000):
 			if candidate > maxPalindrome:
 				maxPalindrome = candidate
 
-print maxPalindrome
+print(maxPalindrome)

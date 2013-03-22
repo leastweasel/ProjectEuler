@@ -3,4 +3,4 @@ for c in range(499, 334, -1):
 		a = 1000 - c - b
 		
 		if a ** 2 + b ** 2 == c ** 2:
-			print a * b * c
+			print(a * b * c)
