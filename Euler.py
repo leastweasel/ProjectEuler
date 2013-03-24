@@ -85,7 +85,7 @@ class PrimeFactorisor:
         for prime in sieve:
             while self.factorisationRemainder % prime == 0:
                 self.primeFactors.append(prime)
-                self.factorisationRemainder /= prime
+                self.factorisationRemainder = int(self.factorisationRemainder / prime)
 
     def checkResult(self):
         """Check that we've found all the factors and, if so, display the highest."""
