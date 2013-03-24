@@ -58,6 +58,14 @@ class SieveOfEratosthenes:
             self.primeCandidates[index] = False
             index += prime
 
+    def asList(self):
+        primes = []
+        
+        for prime in self:
+            primes.append(prime)
+
+        return primes
+
 class PrimeFactorisor:
     """A class that can factorise a given number into its constituent primes."""
     def __init__(self, numberToFactorise):
